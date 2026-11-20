@@ -1,0 +1,6 @@
+{
+  "appId": "com.dakarai.app",
+  "appName": "Dakar AI",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

@@ -1,59 +1,67 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0b1022">
-<title>Dakar AI</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10152d">
+  <title>Dakar AI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <div class="brand">
-    <div class="logo">D</div>
-    <div><b>Dakar AI</b><small>Votre assistant intelligent</small></div>
-  </div>
-  <span class="pill">BÊTA</span>
-</header>
-
-<main>
-  <section>
-    <p class="eyebrow">L'INTELLIGENCE À VOTRE PORTÉE</p>
-    <h1>Bienvenue sur <em>Dakar AI</em></h1>
-    <p class="muted">Apprenez, créez et avancez avec votre assistant numérique pensé pour l'Afrique.</p>
-  </section>
-
-  <section class="cards">
-    <button class="tool" data-mode="chat"><span>💬</span><b>Assistant IA</b><small>Posez vos questions</small></button>
-    <button class="tool" data-mode="homework"><span>📚</span><b>Aide aux devoirs</b><small>Comprendre et progresser</small></button>
-    <button class="tool" data-mode="image"><span>🎨</span><b>Création d'images</b><small>Donnez vie à vos idées</small></button>
-    <button class="tool" data-mode="pro"><span>💼</span><b>Outils professionnels</b><small>CV, lettres et projets</small></button>
-  </section>
-
-  <section class="panel" id="workspace">
-    <h2 id="modeTitle">Discuter avec Dakar AI</h2>
-    <div class="chat" id="chat">
-      <div class="bubble bot">Bonjour 👋 Je suis Dakar AI. Comment puis-je vous aider ?</div>
+  <header class="top">
+    <div class="brand">
+      <span class="logo">D</span>
+      <div><b>Dakar AI</b><small>Ton assistant intelligent</small></div>
     </div>
-    <form id="promptForm">
-      <textarea id="prompt" rows="2" placeholder="Écris ton message ici..." required></textarea>
-      <button class="send" type="submit">➤</button>
-    </form>
-    <p class="hint">Version de démonstration.</p>
-  </section>
+    <span class="pill">BÊTA</span>
+  </header>
 
-  <section class="premium">
-    <h2>Dakar AI Premium</h2>
-    <p>Une expérience enrichie sera bientôt disponible.</p>
-    <div class="prices">
-      <b>3 000 FCFA / mois</b>
-      <b>30 000 FCFA / an</b>
-    </div>
-    <button class="premiumBtn" id="premiumBtn">Découvrir Premium</button>
-  </section>
-</main>
-<footer>© 2026 Dakar AI 🇸🇳</footer>
-<script src="app.js"></script>
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">BONJOUR 👋</p>
+      <h1>Que veux-tu faire<br><em>aujourd'hui ?</em></h1>
+      <p class="muted">Pose une question, travaille tes cours ou prépare tes projets.</p>
+    </section>
+
+    <section class="cards">
+      <button class="tool" data-mode="chat"><span>💬</span><b>Discuter avec l'IA</b><small>Questions et réponses</small></button>
+      <button class="tool" data-mode="homework"><span>📚</span><b>Corriger un devoir</b><small>Explications étape par étape</small></button>
+      <button class="tool" data-mode="image"><span>🎨</span><b>Créer une image</b><small>Studio de création</small></button>
+      <button class="tool" data-mode="pro"><span>📝</span><b>Outils professionnels</b><small>CV, lettres et marketing</small></button>
+    </section>
+
+    <section class="panel" id="workspace">
+      <div class="panel-head">
+        <div><p class="eyebrow">ASSISTANT</p><h2 id="modeTitle">Discuter avec Dakar AI</h2></div>
+        <span class="status">Démo</span>
+      </div>
+      <div class="chat" id="chat">
+        <div class="bubble bot">Bonjour ! Je suis Dakar AI. Choisis un outil ou écris ta première question. Pour le moment, je fonctionne en mode démonstration.</div>
+      </div>
+      <form id="promptForm">
+        <textarea id="prompt" rows="2" placeholder="Écris ton message ici..." required></textarea>
+        <button class="send" type="submit">Envoyer ➤</button>
+      </form>
+      <p class="hint">Mode démonstration : connecte le serveur IA pour obtenir de vraies réponses.</p>
+    </section>
+
+    <section class="premium">
+      <div>
+        <p class="eyebrow">DAKAR AI PREMIUM</p>
+        <h2>Passe à la vitesse supérieure</h2>
+        <p>Plus de possibilités pour tes études et tes projets.</p>
+      </div>
+      <div class="prices">
+        <b>3 000 FCFA <small>/ mois</small></b>
+        <b>30 000 FCFA <small>/ an</small></b>
+      </div>
+      <button id="premiumBtn" class="premiumBtn">Découvrir Premium</button>
+      <small class="hint">Paiement non activé dans cette version de démonstration.</small>
+    </section>
+  </main>
+
+  <footer>© 2026 Dakar AI · Version de démonstration</footer>
+  <script src="app.js"></script>
 </body>
 </html>
